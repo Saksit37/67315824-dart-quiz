@@ -1,15 +1,32 @@
 abstract class MenuItem{
-  String? name;
-  double? basePrice;
+  var name;
+  var basePrice;
 
-  void price(){
-    
-  }
+  void price(double amount);    
 
   void show(){
     print("$name - $basePrice บาท");
   }
 }
-void main(){
+class Drink extends MenuItem{
+  int topping;
+  Drink(this.topping);
+  @override
+  void price(double amount){
+    print("${basePrice + 10 * topping}");
+  }
+}
 
+class Food extends MenuItem{
+  String size;
+  Food(this.size);
+  @override
+  void price(double amount){
+    print("${basePrice * size}");
+  }
+}
+
+void main(){
+  MenuItem d = Drink(10);
+  d.show();
 }

@@ -36,7 +36,6 @@ void main(){
   calcuTotal(55, 2, 10);
   print("---");
   print("ความยาวคูปอง : ${coupon}");
-  print("คูปองหลังกำหนดค่า : NO-COUPON");
 
 
 }
