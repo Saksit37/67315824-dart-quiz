@@ -31,9 +31,9 @@ void main(){
   };  
   print("---");
   print("ยอดสุทธิ (ไม่มีส่วนลด) : ");
-  calcuTotal(55, 1, 0);
+  calcuTotal(55, 2, 0);
   print("ยอดสุทธิ (ส่วนลด 10 บาท) : ");
-  calcuTotal(55, 1, 10);
+  calcuTotal(55, 2, 10);
   print("---");
   print("ความยาวคูปอง : ${coupon}");
   print("คูปองหลังกำหนดค่า : NO-COUPON");
